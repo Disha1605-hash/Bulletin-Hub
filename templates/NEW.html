@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='newcss.css') }}" />
+    <title>MAIN PAGE</title>
+  </head>
+  <body>
+    <div class="banner">
+       
+    
+    <nav>
+      <div class="nav__content">
+        <div class="logo"><a>NOTICE BOARD</a></div>
+        <label for="check" class="checkbox">
+          <i class="ri-menu-line"></i>
+        </label>
+        <input type="checkbox" name="check" id="check" />
+        <ul>
+          <li><a href="{{ url_for('text') }}">NOTICES</a></li>
+          <li><a href="{{ url_for('about') }}">ABOUT</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="form-box" id="form-box">
+      <div class="section__container">
+        <div class="content">
+          <p class="subtitle">WELCOME!</p>
+          <h1 class="title">
+                        {% if username %}
+                        <span>{{ username }}<br /></span> 
+                        {% else %}
+                        <span>Guest<br /></span> 
+                        {% endif %}
+                    </h1>
+          <p class="description">
+                        {% if WHO %}
+                        <span>{{ WHO }}<br /></span> 
+                        {% else %}
+                        <span>Guest<br /></span> 
+                        {% endif %}
+                        {% if year %}
+                        <span>{{ year }}<br /></span> 
+                        {% else %}
+                        <span>Unknown<br /></span> 
+                        {% endif %}
+          </p>
+        </p>
+        <div class="action__btns">
+            <button class="hire__me" >
+                <a href="/">LOG OUT</a>
+            </button>
+        </div>
+        
+        </div>
+        <div class="image">
+          <img src="static/profile.png" alt="profile" />
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <script>
+      if ( window.history.replaceState ) {
+          window.history.replaceState( null, null, window.location.href );
+      }
+  </script>
+  </body>
+</html>

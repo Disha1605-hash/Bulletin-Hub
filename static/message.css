@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(b2.jpeg);
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+}
+
+.form-box {
+    width: 380px;
+    height: 420px;
+    position: relative;
+    margin: 6% auto;
+    background: #e6feff;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 30px;
+    
+}
+
+.button-box {
+    width: 220px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #ff61241f;
+    border-radius: 30px;
+    text-align: left;
+    
+}
+
+.toggle-btn {
+    padding: 10px 85px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color: #fff;
+}
+
+#btn {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 220px;
+    height: 100%;
+    background: linear-gradient(to right, #009688, #5db6b6);
+    border-radius: 30px;
+    transition: .5s;
+    text-align: left;
+}
+
+
+
+.submit-btn {
+    width: 30%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    background: linear-gradient(to right, #009688, #5db6b6);
+    border: 0;
+    outline: none;
+    transform: translateY(-5%);
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+
+
+
+.content1 {
+    width: -200;
+    position: center;
+    top: 60%;
+    transform: translateY(-85%);
+    text-align: center;
+    color: rgb(247, 246, 246);
+    text-decoration: none;
+    list-style-type: none;
+    overflow:hidden;
+}
+
+
+#Login {
+    left: 50px;
+}
+
+
+
+.container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+}
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+#error-message {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+}
+
+#error-message p {
+    margin: 0;
+}
+
+#error-message button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.message {
+    background-color: #f8d7da; /* Red background color */
+    color: #721c24; /* Dark text color */
+    padding: 10px 15px; /* Padding around the message */
+    margin-bottom: 20px; /* Bottom margin to separate it from other content */
+    border: 1px solid #f5c6cb; /* Red border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.description {
+    line-height: 4rem;
+    font-size: bold;
+    color: rgb(14, 0, 0);
+    margin-bottom: 1rem;
+    transform: translateY(-15%);
+    transform: translateX(37%);
+    position: relative; /* Ensure the ::before pseudo-element is positioned relative to the .description element */
+}
+span{
+    font-weight: bold;
+}
+
+
+

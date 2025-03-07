@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connect</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='message.css') }}">
+</head>
+<body>    
+<div class="hero">
+    <div class="form-box" id="form-box">
+        <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="Login()">Get in touch with</button>
+        </div>
+
+        <form action="{{ url_for('message') }}" method="post">
+            <p class="description">
+                <span>{{ notice_username }}<br /></span>
+                <span>{{ WHO }} of<br /></span>
+                <span>{{ year }}<br /></span>
+            </p>
+
+            <button type="submit" class="submit-btn">
+                <ul>
+                    <li><a class="content1" href="mailto:{{ email }}">Connect</a></li>
+                </ul>
+            </button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
